@@ -33,7 +33,7 @@ SPINE-02|Eth2|10.111.3.12|LEAF-03|Eth2|10.111.3.13|
 ### Подготовка стенда
 
 #### Схема стенда
-![img_19.png](Leaf-Spine-lab-01.png)
+![img_19.png](Leaf-Spine-lab-01.PNG)
 
 
 
