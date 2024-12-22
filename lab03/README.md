@@ -5,4 +5,4 @@
 
 
 ### Схема сети Underlay IS-IS
-![img_19.png](IS-IS Underlay.png)
+![img_19.png](IS-IS.png)
