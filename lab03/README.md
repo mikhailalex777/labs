@@ -385,7 +385,7 @@ leaf-01         5005.0000.1b08  2      UP     00:00:08   Ethernet1/1
 leaf-02         5003.0000.1b08  2      UP     00:00:08   Ethernet1/2  
 leaf-03         5002.0000.1b08  2      UP     00:00:07   Ethernet1/3  
 
-Проверка базы состояния связей ISIS на spine-01:   
+__Проверка базы состояния связей ISIS на spine-01:__   
 <span style="color:green">spine-01# sh isis database  
 IS-IS Process: UNDERLAY LSP database VRF: default  
 IS-IS Level-1 Link State Database  
@@ -405,7 +405,7 @@ IS-IS Level-1 Link State Database
   leaf-03.00-00         0x0000014D   0x3DA2    807        0/0/0/3  
   leaf-03.01-00         0x00000002   0xFCB0    748        0/0/0/3  
 
-Проверим, что с spine-01 можем достучаться до адреса loopback leaf-01:  
+__Проверим, что с spine-01 можем достучаться до адреса loopback leaf-01:__  
 <span style="color:yellow">spine-01# ping 172.16.254.1  
 PING 172.16.254.1 (172.16.254.1): 56 data bytes  
 64 bytes from 172.16.254.1: icmp_seq=0 ttl=254 time=5.433 ms  
@@ -418,7 +418,7 @@ PING 172.16.254.1 (172.16.254.1): 56 data bytes
 5 packets transmitted, 5 packets received, 0.00% packet loss  
 round-trip min/avg/max = 2.443/3.102/5.433 ms  
 
-Проверим, что с spine-01 можем достучаться до адреса loopback leaf-02:  
+__Проверим, что с spine-01 можем достучаться до адреса loopback leaf-02:__  
 <span style="color:yellow">spine-01# ping 172.16.254.2  
 PING 172.16.254.2 (172.16.254.2): 56 data bytes  
 64 bytes from 172.16.254.2: icmp_seq=0 ttl=254 time=3.785 ms  
@@ -431,8 +431,8 @@ PING 172.16.254.2 (172.16.254.2): 56 data bytes
 5 packets transmitted, 5 packets received, 0.00% packet loss  
 round-trip min/avg/max = 2.174/2.713/3.785 ms  
 
-Проверим, что с spine-01 можем достучаться до адреса loopback leaf-03:  
-<span style="color:yellow">spine-01# ping 172.16.254.3
+__Проверим, что с spine-01 можем достучаться до адреса loopback leaf-03:__  
+<span style="color:yellow">spine-01# ping 172.16.254.3  
 PING 172.16.254.3 (172.16.254.3): 56 data bytes  
 64 bytes from 172.16.254.3: icmp_seq=0 ttl=254 time=4.527 ms  
 64 bytes from 172.16.254.3: icmp_seq=1 ttl=254 time=3.268 ms  
@@ -440,17 +440,17 @@ PING 172.16.254.3 (172.16.254.3): 56 data bytes
 64 bytes from 172.16.254.3: icmp_seq=3 ttl=254 time=4.039 ms  
 64 bytes from 172.16.254.3: icmp_seq=4 ttl=254 time=3.616 ms  
 
---- 172.16.254.3 ping statistics ---
-5 packets transmitted, 5 packets received, 0.00% packet loss
-round-trip min/avg/max = 3.268/4.343/6.267 ms
+--- 172.16.254.3 ping statistics ---  
+5 packets transmitted, 5 packets received, 0.00% packet loss  
+round-trip min/avg/max = 3.268/4.343/6.267 ms  
 
 
 --- 172.16.254.3 ping statistics ---  
 5 packets transmitted, 5 packets received, 0.00% packet loss  
 round-trip min/avg/max = 2.353/3.492/5.034 ms  
 
-Проверим, что с spine-01 можем достучаться до адреса loopback spine-02:  
-<span style="color:yellow">spine-01# ping 172.16.254.254  
+__Проверим, что с spine-01 можем достучаться до адреса loopback spine-02:__   
+<span style="color:yellow">spine-01# ping 172.16.254.254    
 PING 172.16.254.254 (172.16.254.254): 56 data bytes  
 64 bytes from 172.16.254.254: icmp_seq=0 ttl=253 time=9.062 ms  
 64 bytes from 172.16.254.254: icmp_seq=1 ttl=253 time=6.261 ms  
