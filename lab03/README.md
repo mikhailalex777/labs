@@ -386,24 +386,24 @@ leaf-02         5003.0000.1b08  2      UP     00:00:08   Ethernet1/2
 leaf-03         5002.0000.1b08  2      UP     00:00:07   Ethernet1/3  
 
 Проверка базы состояния связей ISIS на spine-01: 
-spine-01# sh isis database
-IS-IS Process: UNDERLAY LSP database VRF: default
-IS-IS Level-1 Link State Database
-  LSPID                 Seq Number   Checksum  Lifetime   A/P/O/T
+spine-01# sh isis database  
+IS-IS Process: UNDERLAY LSP database VRF: default  
+IS-IS Level-1 Link State Database  
+  LSPID                 Seq Number   Checksum  Lifetime   A/P/O/T  
 
 IS-IS Level-2 Link State Database
-  LSPID                 Seq Number   Checksum  Lifetime   A/P/O/T
-  spine-01.00-00      * 0x0000014E   0xF9BB    745        0/0/0/3
-  spine-02.00-00        0x0000014F   0x8E16    746        0/0/0/3
-  spine-02.02-00        0x00000148   0x5D0B    816        0/0/0/3
-  spine-02.03-00        0x00000002   0xEEBE    747        0/0/0/3
-  leaf-01.00-00         0x0000014D   0xB754    1052       0/0/0/3
-  leaf-01.01-00         0x00000148   0x5515    1111       0/0/0/3
-  leaf-01.02-00         0x00000148   0x5711    1119       0/0/0/3
-  leaf-02.00-00         0x0000014D   0xE313    824        0/0/0/3
-  leaf-02.01-00         0x0000014A   0x5D09    898        0/0/0/3
-  leaf-03.00-00         0x0000014D   0x3DA2    807        0/0/0/3
-  leaf-03.01-00         0x00000002   0xFCB0    748        0/0/0/3
+  LSPID                 Seq Number   Checksum  Lifetime   A/P/O/T  
+  spine-01.00-00      * 0x0000014E   0xF9BB    745        0/0/0/3  
+  spine-02.00-00        0x0000014F   0x8E16    746        0/0/0/3  
+  spine-02.02-00        0x00000148   0x5D0B    816        0/0/0/3  
+  spine-02.03-00        0x00000002   0xEEBE    747        0/0/0/3  
+  leaf-01.00-00         0x0000014D   0xB754    1052       0/0/0/3  
+  leaf-01.01-00         0x00000148   0x5515    1111       0/0/0/3  
+  leaf-01.02-00         0x00000148   0x5711    1119       0/0/0/3  
+  leaf-02.00-00         0x0000014D   0xE313    824        0/0/0/3  
+  leaf-02.01-00         0x0000014A   0x5D09    898        0/0/0/3  
+  leaf-03.00-00         0x0000014D   0x3DA2    807        0/0/0/3  
+  leaf-03.01-00         0x00000002   0xFCB0    748        0/0/0/3  
 
 Проверим, что с spine-01 можем достучаться до адреса loopback leaf-01:  
 spine-01# ping 172.16.254.1  
